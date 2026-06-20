@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenschutzerkl&auml;rung - hey! App</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background-color: #262B4B;
+    color: #E8E0D5;
+    font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 24px;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+  .draft-notice {
+    color: #BF6B2A;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .date {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 36px;
+    margin-bottom: 12px;
+  }
+  p { margin-bottom: 12px; }
+  ul {
+    margin-bottom: 12px;
+    padding-left: 20px;
+  }
+  li { margin-bottom: 6px; }
+  strong { font-weight: 700; }
+  .category {
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+  a { color: #BF6B2A; text-decoration: underline; }
+  a:hover { opacity: 0.8; }
+  .footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(232, 224, 213, 0.15);
+    font-size: 13px;
+    opacity: 0.5;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(232, 224, 213, 0.15);
+    font-size: 14px;
+  }
+  .nav a { color: #E8E0D5; opacity: 0.6; text-decoration: none; }
+  .nav a:hover { opacity: 1; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Datenschutzerkl&auml;rung der App &bdquo;hey!&ldquo;</h1>
+  <p class="draft-notice">ENTWURF &mdash; ANWALTLICHE PR&Uuml;FUNG VOR VER&Ouml;FFENTLICHUNG ERFORDERLICH</p>
+  <p class="date">Stand: 20.06.2026</p>
+
+  <h2>1. Verantwortlicher</h2>
+  <p>Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO):</p>
+  <p>Manuel Alexander Dresel<br>Am Bungert 12<br>77880 Sasbach<br>Deutschland</p>
+  <p>E-Mail: Dresel-Manuel@gmx.de</p>
+
+  <h2>2. Grundprinzip: Alle Daten bleiben auf Ihrem Ger&auml;t</h2>
+  <p>Die App &bdquo;hey!&ldquo; verfolgt einen strikten Local-First-Ansatz. Das bedeutet:</p>
+  <ul>
+    <li>Es existiert kein Server, kein Backend und keine Cloud-Anbindung.</li>
+    <li>S&auml;mtliche Daten werden ausschlie&szlig;lich lokal auf Ihrem Endger&auml;t gespeichert.</li>
+    <li>Es werden keine Daten an den Entwickler, an Dritte oder an einen externen Server &uuml;bermittelt.</li>
+    <li>Es gibt keine Benutzerkonten, keine Registrierung und keine serverseitige Authentifizierung.</li>
+    <li>Es werden keine Analyse-, Tracking- oder Werbedienste eingesetzt.</li>
+  </ul>
+  <p>Die einzige Ausnahme ist die unter Punkt 5 beschriebene Notfall-SMS-Funktion, die ausschlie&szlig;lich vom Nutzer selbst ausgel&ouml;st wird.</p>
+
+  <h2>3. Welche Daten speichert die App lokal?</h2>
+  <p>Die App speichert folgende Daten ausschlie&szlig;lich auf Ihrem Ger&auml;t (im lokalen Speicher via SharedPreferences):</p>
+  <p class="category">Nutzerprofil:</p>
+  <ul><li>Ihr selbst gew&auml;hlter Anzeigename</li></ul>
+  <p class="category">Notfallkontakte:</p>
+  <ul><li>Namen und Telefonnummern der von Ihnen ausgew&auml;hlten Notfallkontakte</li></ul>
+  <p class="category">Einstellungen:</p>
+  <ul>
+    <li>Sicherheitseinstellungen (Auto Check-in, Stiller Alarm)</li>
+    <li>Bluetooth-Einstellungen</li>
+  </ul>
+  <p class="category">Einwilligungsdaten:</p>
+  <ul>
+    <li>Altersbest&auml;tigung (18+) mit Zeitstempel</li>
+    <li>Annahme der Nutzungsbedingungen mit Zeitstempel</li>
+    <li>Kenntnisnahme der Sicherheitshinweise mit Zeitstempel</li>
+    <li>Einwilligungsversion</li>
+  </ul>
+  <p>Keine dieser Daten verl&auml;sst Ihr Ger&auml;t. Es findet keine Synchronisation, kein Backup auf externe Server und keine &Uuml;bermittlung an den Entwickler statt.</p>
+
+  <h2>4. Rechtsgrundlage der Verarbeitung</h2>
+  <p>Die lokale Speicherung der unter Punkt 3 genannten Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserf&uuml;llung). Die Daten sind technisch erforderlich, um die Kernfunktionen der App bereitzustellen.</p>
+  <p>Die Altersbest&auml;tigung und Einwilligungsdaten werden auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO (rechtliche Verpflichtung) gespeichert.</p>
+
+  <h2>5. Notfall-SMS-Funktion</h2>
+  <p>Die App enth&auml;lt eine Notfall-Funktion. Wenn Sie den Notfall-Button f&uuml;r 4 Sekunden gedr&uuml;ckt halten, &ouml;ffnet die App Ihre SMS-Anwendung mit einer vorformulierten Nachricht an Ihre hinterlegten Notfallkontakte.</p>
+  <p>Wichtig zu verstehen:</p>
+  <ul>
+    <li>Die Nachricht wird NICHT automatisch versendet. Die App &ouml;ffnet lediglich Ihre Standard-SMS-App mit vorausgef&uuml;lltem Text und Empf&auml;nger. Sie m&uuml;ssen den Versand selbst durch Tippen auf &bdquo;Senden&ldquo; best&auml;tigen.</li>
+    <li>Der SMS-Versand erfolgt &uuml;ber Ihren Mobilfunkanbieter, nicht &uuml;ber die App oder einen Server des Entwicklers.</li>
+    <li>Die App hat keinen Zugriff auf den tats&auml;chlichen Versand und kann diesen nicht nachverfolgen.</li>
+    <li>Die dabei &uuml;bermittelten Daten (Telefonnummer des Empf&auml;ngers, Nachrichtentext) unterliegen den Datenschutzbestimmungen Ihres Mobilfunkanbieters.</li>
+  </ul>
+
+  <h2>6. App-Berechtigungen</h2>
+  <p><strong>Kontakte:</strong> Um Ihnen die Auswahl Ihrer Notfallkontakte aus Ihrem Adressbuch zu erm&ouml;glichen. Die ausgew&auml;hlten Kontaktdaten werden ausschlie&szlig;lich lokal gespeichert. Ihr vollst&auml;ndiges Adressbuch wird nicht ausgelesen, kopiert oder &uuml;bertragen.</p>
+  <p><strong>Bluetooth:</strong> Zur Nahbereichs-Erkennung anderer App-Nutzer in Ihrer Umgebung. Die Bluetooth-Kommunikation erfolgt direkt zwischen Ger&auml;ten (Peer-to-Peer). Es werden keine Standortdaten erhoben und keine Daten an Server gesendet.</p>
+  <p>Jede Berechtigung wird einzeln angefragt. Sie k&ouml;nnen jede Berechtigung jederzeit in den Systemeinstellungen Ihres Ger&auml;ts widerrufen.</p>
+
+  <h2>7. Keine Daten&uuml;bermittlung an Dritte</h2>
+  <p>Es findet keine &Uuml;bermittlung personenbezogener Daten an Dritte statt.</p>
+
+  <h2>8. Keine Daten&uuml;bermittlung in Drittl&auml;nder</h2>
+  <p>Da keine Daten das Ger&auml;t verlassen, findet keine &Uuml;bermittlung in Drittl&auml;nder statt.</p>
+
+  <h2>9. Speicherdauer und L&ouml;schung</h2>
+  <p>Alle lokal gespeicherten Daten verbleiben auf Ihrem Ger&auml;t, bis Sie eine der folgenden Aktionen durchf&uuml;hren:</p>
+  <ul>
+    <li>Einwilligung in der App widerrufen (unter Einstellungen)</li>
+    <li>App-Daten in den Systemeinstellungen Ihres Ger&auml;ts l&ouml;schen</li>
+    <li>Die App deinstallieren</li>
+  </ul>
+
+  <h2>10. Ihre Rechte</h2>
+  <ul>
+    <li>Auskunft (Art. 15 DSGVO): Alle gespeicherten Daten sind direkt in der App einsehbar.</li>
+    <li>Berichtigung (Art. 16 DSGVO): Sie k&ouml;nnen alle Daten direkt in der App &auml;ndern.</li>
+    <li>L&ouml;schung (Art. 17 DSGVO): Durch Deinstallation oder Widerruf der Einwilligung.</li>
+    <li>Einschr&auml;nkung der Verarbeitung (Art. 18 DSGVO)</li>
+    <li>Daten&uuml;bertragbarkeit (Art. 20 DSGVO)</li>
+    <li>Widerspruch (Art. 21 DSGVO)</li>
+    <li>Widerruf erteilter Einwilligungen (Art. 7 Abs. 3 DSGVO)</li>
+  </ul>
+  <p>Beschwerden: Der Landesbeauftragte f&uuml;r den Datenschutz und die Informationsfreiheit Baden-W&uuml;rttemberg, Lautenschlagerstra&szlig;e 20, 70173 Stuttgart, <a href="mailto:poststelle@lfdi.bwl.de">poststelle@lfdi.bwl.de</a></p>
+
+  <h2>11. Datensicherheit</h2>
+  <p>Die lokal gespeicherten Daten sind durch die Sicherheitsmechanismen Ihres Betriebssystems (Android/iOS) gesch&uuml;tzt.</p>
+
+  <h2>12. Mindestalter</h2>
+  <p>Die Nutzung der App setzt ein Mindestalter von 18 Jahren voraus.</p>
+
+  <h2>13. &Auml;nderungen</h2>
+  <p>Bei wesentlichen &Auml;nderungen wird die Einwilligungsversion in der App erh&ouml;ht. Sie werden beim n&auml;chsten App-Start erneut zur Kenntnisnahme aufgefordert.</p>
+
+  <div class="nav">
+    <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+    <a href="impressum.html">Impressum</a>
+  </div>
+  <div class="footer">&copy; 2026 Manuel Alexander Dresel</div>
+</div>
+</body>
+</html>
