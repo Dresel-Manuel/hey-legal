@@ -49,15 +49,21 @@
   }
   li { margin-bottom: 6px; }
   strong { font-weight: 700; }
-  .warning-box {
-    background-color: rgba(191, 107, 42, 0.15);
-    border-left: 3px solid #BF6B2A;
-    padding: 16px 20px;
-    margin: 16px 0;
-    font-size: 14px;
+  .category {
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 4px;
   }
   a { color: #BF6B2A; text-decoration: underline; }
   a:hover { opacity: 0.8; }
+  .footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(232, 224, 213, 0.15);
+    font-size: 13px;
+    opacity: 0.5;
+    text-align: center;
+  }
   .nav {
     display: flex;
     gap: 24px;
@@ -69,23 +75,36 @@
   }
   .nav a { color: #E8E0D5; opacity: 0.6; text-decoration: none; }
   .nav a:hover { opacity: 1; }
-  .footer {
-    margin-top: 20px;
-    font-size: 13px;
-    opacity: 0.5;
-    text-align: center;
+  .langbar {
+    display: flex; gap: 10px; justify-content: flex-end;
+    margin-bottom: 24px; font-size: 13px;
+  }
+  .langbar a {
+    color: #E8E0D5; opacity: 0.55; text-decoration: none;
+    border: 1px solid rgba(232, 224, 213, 0.2);
+    border-radius: 14px; padding: 4px 12px;
+  }
+  .langbar a:hover { opacity: 0.9; }
+  .langbar a.active {
+    opacity: 1; color: #BF6B2A; border-color: #BF6B2A;
+  }
+  .translation-note {
+    font-size: 13px; opacity: 0.6; margin-bottom: 28px;
+    border-left: 2px solid rgba(232, 224, 213, 0.25);
+    padding-left: 12px;
   }
 </style>
 </head>
 <body>
 <div class="container">
+<div class="langbar"><a href="nutzungsbedingungen.html" class="active">Deutsch</a><a href="nutzungsbedingungen-en.html">English</a></div>
   <h1>Nutzungsbedingungen der App &bdquo;hey!&ldquo;</h1>
   <p class="draft-notice">ENTWURF &mdash; ANWALTLICHE PR&Uuml;FUNG VOR VER&Ouml;FFENTLICHUNG ERFORDERLICH</p>
-  <p class="date">Stand: 20.06.2026</p>
+  <p class="date">Stand: 08.09.2026</p>
 
   <h2>1. Geltungsbereich</h2>
   <p>Diese Nutzungsbedingungen gelten f&uuml;r die Nutzung der mobilen App &bdquo;hey!&ldquo;, bereitgestellt von:</p>
-  <p>Manuel Alexander Dresel<br>Am Bungert 12<br>77880 Sasbach, Deutschland<br>E-Mail: Dresel-Manuel@gmx.de</p>
+  <p>Manuel Alexander Dresel<br>Flutstra&szlig;e 24<br>12439 Berlin, Deutschland<br>E-Mail: Dresel-Manuel@gmx.de</p>
   <p>Mit der Nutzung der App erkl&auml;ren Sie sich mit diesen Nutzungsbedingungen einverstanden.</p>
 
   <h2>2. Beschreibung der App</h2>

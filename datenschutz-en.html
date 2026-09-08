@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy policy - hey! App</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background-color: #262B4B;
+    color: #E8E0D5;
+    font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 24px;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+  .draft-notice {
+    color: #BF6B2A;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .date {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 36px;
+    margin-bottom: 12px;
+  }
+  p { margin-bottom: 12px; }
+  ul {
+    margin-bottom: 12px;
+    padding-left: 20px;
+  }
+  li { margin-bottom: 6px; }
+  strong { font-weight: 700; }
+  .category {
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+  a { color: #BF6B2A; text-decoration: underline; }
+  a:hover { opacity: 0.8; }
+  .footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(232, 224, 213, 0.15);
+    font-size: 13px;
+    opacity: 0.5;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(232, 224, 213, 0.15);
+    font-size: 14px;
+  }
+  .nav a { color: #E8E0D5; opacity: 0.6; text-decoration: none; }
+  .nav a:hover { opacity: 1; }
+  .langbar {
+    display: flex; gap: 10px; justify-content: flex-end;
+    margin-bottom: 24px; font-size: 13px;
+  }
+  .langbar a {
+    color: #E8E0D5; opacity: 0.55; text-decoration: none;
+    border: 1px solid rgba(232, 224, 213, 0.2);
+    border-radius: 14px; padding: 4px 12px;
+  }
+  .langbar a:hover { opacity: 0.9; }
+  .langbar a.active {
+    opacity: 1; color: #BF6B2A; border-color: #BF6B2A;
+  }
+  .translation-note {
+    font-size: 13px; opacity: 0.6; margin-bottom: 28px;
+    border-left: 2px solid rgba(232, 224, 213, 0.25);
+    padding-left: 12px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="langbar"><a href="datenschutz.html">Deutsch</a><a href="datenschutz-en.html" class="active">English</a></div>
+  <h1>Privacy policy for the &bdquo;hey!&ldquo; app</h1>
+  <p class="draft-notice">DRAFT &mdash; LEGAL REVIEW REQUIRED BEFORE PUBLICATION</p>
+  <p class="date">Last updated: 8 September 2026</p>
+<p class="translation-note">English translation for your convenience. The German version is the legally binding one; if the two differ, the German text applies. <a href="datenschutz.html">Deutsche Fassung</a></p>
+  <h2>1. Controller</h2>
+  <p>Controller within the meaning of the General Data Protection Regulation (GDPR):</p>
+  <p>Manuel Alexander Dresel<br>Flutstra&szlig;e 24<br>12439 Berlin<br>Germany</p>
+  <p>Email: <a href="mailto:Dresel-Manuel@gmx.de">Dresel-Manuel@gmx.de</a></p>
+
+  <h2>2. Core principle: all data stays on your device</h2>
+  <p>The &bdquo;hey!&ldquo; app follows a strict local-first approach. This means:</p>
+  <ul>
+    <li>There is no server, no backend and no cloud connection.</li>
+    <li>All data is stored exclusively on your device.</li>
+    <li>No data is transmitted to the developer, to third parties or to an external server.</li>
+    <li>There are no user accounts, no registration and no server-side authentication.</li>
+    <li>No analytics, tracking or advertising services are used.</li>
+  </ul>
+  <p>The only exception is the emergency SMS feature described in section 5, which is triggered solely by you.</p>
+
+  <h2>3. What data does the app store locally?</h2>
+  <p>The app stores the following data exclusively on your device (in local storage via SharedPreferences):</p>
+  <p class="category">User profile:</p>
+  <ul><li>the display name you chose</li></ul>
+  <p class="category">Emergency contacts:</p>
+  <ul><li>names and phone numbers of the emergency contacts you selected</li></ul>
+  <p class="category">Settings:</p>
+  <ul>
+    <li>safety settings (auto check-in, silent alarm)</li>
+    <li>Bluetooth settings</li>
+  </ul>
+  <p class="category">Consent records:</p>
+  <ul>
+    <li>age confirmation (18+) with timestamp</li>
+    <li>acceptance of the terms of use with timestamp</li>
+    <li>acknowledgement of the safety notices with timestamp</li>
+    <li>consent version</li>
+  </ul>
+  <p>None of this data leaves your device. There is no synchronisation, no backup to external servers and no transmission to the developer.</p>
+
+  <h2>4. Legal basis for processing</h2>
+  <p>The local storage of the data listed in section 3 is based on Art. 6 (1) (b) GDPR (performance of a contract). The data is technically necessary to provide the app's core functions.</p>
+  <p>The age confirmation and consent records are stored on the basis of Art. 6 (1) (c) GDPR (legal obligation).</p>
+
+  <h2>5. Emergency SMS feature</h2>
+  <p>The app contains an emergency feature. If you hold the emergency button for 4 seconds, the app opens your SMS application with a pre-written message to the emergency contacts you have stored.</p>
+  <p>Important to understand:</p>
+  <ul>
+    <li>The message is NOT sent automatically. The app merely opens your default SMS app with the text and recipient pre-filled. You have to confirm sending it yourself by tapping &bdquo;send&ldquo;.</li>
+    <li>The SMS is sent via your mobile network operator, not via the app or a server of the developer.</li>
+    <li>The app has no access to the actual sending and cannot track it.</li>
+    <li>The data transmitted in the process (the recipient's phone number, the message text) is subject to the privacy terms of your mobile network operator.</li>
+  </ul>
+
+  <h2>6. App permissions</h2>
+  <p><strong>Contacts:</strong> so that you can select your emergency contacts from your address book. The selected contact details are stored locally only. Your full address book is not read, copied or transmitted.</p>
+  <p><strong>Bluetooth:</strong> for detecting other app users nearby. Bluetooth communication takes place directly between devices (peer-to-peer). No location data is collected and no data is sent to any server.</p>
+  <p>Each permission is requested individually. You can revoke any permission at any time in your device's system settings.</p>
+
+  <h2>7. No transfer to third parties</h2>
+  <p>No personal data is transferred to third parties.</p>
+
+  <h2>8. No transfer to third countries</h2>
+  <p>As no data leaves the device, no transfer to third countries takes place.</p>
+
+  <h2>9. Storage period and deletion</h2>
+  <p>All locally stored data remains on your device until you do one of the following:</p>
+  <ul>
+    <li>withdraw your consent in the app (under settings)</li>
+    <li>clear the app's data in your device's system settings</li>
+    <li>uninstall the app</li>
+  </ul>
+
+  <h2>10. Your rights</h2>
+  <ul>
+    <li>Access (Art. 15 GDPR): all stored data can be viewed directly in the app.</li>
+    <li>Rectification (Art. 16 GDPR): you can change all data directly in the app.</li>
+    <li>Erasure (Art. 17 GDPR): by uninstalling the app or withdrawing your consent.</li>
+    <li>Restriction of processing (Art. 18 GDPR)</li>
+    <li>Data portability (Art. 20 GDPR)</li>
+    <li>Objection (Art. 21 GDPR)</li>
+    <li>Withdrawal of consent given (Art. 7 (3) GDPR)</li>
+  </ul>
+  <p>Complaints: Berliner Beauftragte f&uuml;r Datenschutz und Informationsfreiheit (Berlin Commissioner for Data Protection and Freedom of Information), Alt-Moabit 59-61, 10555 Berlin, Germany, <a href="mailto:mailbox@datenschutz-berlin.de">mailbox@datenschutz-berlin.de</a></p>
+
+  <h2>11. Data security</h2>
+  <p>The locally stored data is protected by the security mechanisms of your operating system (Android/iOS).</p>
+
+  <h2>12. Minimum age</h2>
+  <p>Use of the app requires a minimum age of 18.</p>
+
+  <h2>13. Changes</h2>
+  <p>In the event of substantial changes, the consent version in the app is increased. You will be asked to acknowledge the changes the next time you start the app.</p>
+
+  <div class="nav">
+    <a href="nutzungsbedingungen-en.html">Terms of use</a>
+    <a href="impressum-en.html">Legal notice</a>
+  </div>
+  <div class="footer">&copy; 2026 Manuel Alexander Dresel</div>
+</div>
+</body>
+</html>

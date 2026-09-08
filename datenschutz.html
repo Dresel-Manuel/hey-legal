@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Datenschutzerkl&auml;rung - hey! App</title>
+<title>Datenschutz - hey! App</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -75,18 +75,37 @@
   }
   .nav a { color: #E8E0D5; opacity: 0.6; text-decoration: none; }
   .nav a:hover { opacity: 1; }
+  .langbar {
+    display: flex; gap: 10px; justify-content: flex-end;
+    margin-bottom: 24px; font-size: 13px;
+  }
+  .langbar a {
+    color: #E8E0D5; opacity: 0.55; text-decoration: none;
+    border: 1px solid rgba(232, 224, 213, 0.2);
+    border-radius: 14px; padding: 4px 12px;
+  }
+  .langbar a:hover { opacity: 0.9; }
+  .langbar a.active {
+    opacity: 1; color: #BF6B2A; border-color: #BF6B2A;
+  }
+  .translation-note {
+    font-size: 13px; opacity: 0.6; margin-bottom: 28px;
+    border-left: 2px solid rgba(232, 224, 213, 0.25);
+    padding-left: 12px;
+  }
 </style>
 </head>
 <body>
 <div class="container">
+<div class="langbar"><a href="datenschutz.html" class="active">Deutsch</a><a href="datenschutz-en.html">English</a></div>
   <h1>Datenschutzerkl&auml;rung der App &bdquo;hey!&ldquo;</h1>
   <p class="draft-notice">ENTWURF &mdash; ANWALTLICHE PR&Uuml;FUNG VOR VER&Ouml;FFENTLICHUNG ERFORDERLICH</p>
-  <p class="date">Stand: 20.06.2026</p>
+  <p class="date">Stand: 08.09.2026</p>
 
   <h2>1. Verantwortlicher</h2>
   <p>Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO):</p>
-  <p>Manuel Alexander Dresel<br>Am Bungert 12<br>77880 Sasbach<br>Deutschland</p>
-  <p>E-Mail: Dresel-Manuel@gmx.de</p>
+  <p>Manuel Alexander Dresel<br>Flutstra&szlig;e 24<br>12439 Berlin<br>Deutschland</p>
+  <p>E-Mail: <a href="mailto:Dresel-Manuel@gmx.de">Dresel-Manuel@gmx.de</a></p>
 
   <h2>2. Grundprinzip: Alle Daten bleiben auf Ihrem Ger&auml;t</h2>
   <p>Die App &bdquo;hey!&ldquo; verfolgt einen strikten Local-First-Ansatz. Das bedeutet:</p>
@@ -162,7 +181,7 @@
     <li>Widerspruch (Art. 21 DSGVO)</li>
     <li>Widerruf erteilter Einwilligungen (Art. 7 Abs. 3 DSGVO)</li>
   </ul>
-  <p>Beschwerden: Der Landesbeauftragte f&uuml;r den Datenschutz und die Informationsfreiheit Baden-W&uuml;rttemberg, Lautenschlagerstra&szlig;e 20, 70173 Stuttgart, <a href="mailto:poststelle@lfdi.bwl.de">poststelle@lfdi.bwl.de</a></p>
+  <p>Beschwerden: Berliner Beauftragte f&uuml;r Datenschutz und Informationsfreiheit, Alt-Moabit 59-61, 10555 Berlin, <a href="mailto:mailbox@datenschutz-berlin.de">mailbox@datenschutz-berlin.de</a></p>
 
   <h2>11. Datensicherheit</h2>
   <p>Die lokal gespeicherten Daten sind durch die Sicherheitsmechanismen Ihres Betriebssystems (Android/iOS) gesch&uuml;tzt.</p>
