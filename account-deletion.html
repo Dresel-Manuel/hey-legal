@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete account - hey! App</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background-color: #262B4B;
+    color: #E8E0D5;
+    font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 24px;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+  .draft-notice {
+    color: #BF6B2A;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .date {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 36px;
+    margin-bottom: 12px;
+  }
+  p { margin-bottom: 12px; }
+  ul {
+    margin-bottom: 12px;
+    padding-left: 20px;
+  }
+  li { margin-bottom: 6px; }
+  strong { font-weight: 700; }
+  .category {
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+  a { color: #BF6B2A; text-decoration: underline; }
+  a:hover { opacity: 0.8; }
+  .footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(232, 224, 213, 0.15);
+    font-size: 13px;
+    opacity: 0.5;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(232, 224, 213, 0.15);
+    font-size: 14px;
+  }
+  .nav a { color: #E8E0D5; opacity: 0.6; text-decoration: none; }
+  .nav a:hover { opacity: 1; }
+  .langbar {
+    display: flex; gap: 10px; justify-content: flex-end;
+    margin-bottom: 24px; font-size: 13px;
+  }
+  .langbar a {
+    color: #E8E0D5; opacity: 0.55; text-decoration: none;
+    border: 1px solid rgba(232, 224, 213, 0.2);
+    border-radius: 14px; padding: 4px 12px;
+  }
+  .langbar a:hover { opacity: 0.9; }
+  .langbar a.active {
+    opacity: 1; color: #BF6B2A; border-color: #BF6B2A;
+  }
+  .translation-note {
+    font-size: 13px; opacity: 0.6; margin-bottom: 28px;
+    border-left: 2px solid rgba(232, 224, 213, 0.25);
+    padding-left: 12px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="langbar"><a href="konto-loeschen.html">Deutsch</a><a class="active" href="account-deletion.html">English</a></div>
+  <h1>hey! – Delete your account and data</h1>
+  <p class="date">As of 23 Nov 2026 · App: hey! (Android package de.manueldresel.hey) · Provider: Manuel Dresel</p>
+
+  <h2>Delete your account in the app</h2>
+  <ol style="padding-left:20px;margin-bottom:12px">
+    <li>Open hey! and tap <strong>Profile</strong> at the bottom.</li>
+    <li>Scroll all the way down to <strong>Delete account</strong>.</li>
+    <li>Tap <strong>Delete account</strong> and confirm with <strong>Delete for good</strong>.</li>
+  </ol>
+  <p>Deletion happens at once. The app then starts again at the language choice.</p>
+
+  <h2>Ask us to delete it without the app</h2>
+  <p>No longer have the app? Email <a href="mailto:Dresel-Manuel@web.de?subject=hey!%20delete%20account">Dresel-Manuel@web.de</a> with the subject "hey! delete account". If you have it, include your <strong>account ID</strong> (shown in your profile, tap to copy). Without it, give the name you used in the app and roughly when you last used it. We delete within 30 days and confirm by email.</p>
+
+  <h2>What is deleted</h2>
+  <ul>
+    <li>your anonymous account (random ID, sign-in data)</li>
+    <li>your profile (name, figure)</li>
+    <li>your question card on the map (deck, starting question, rough area of your location)</li>
+    <li>your requests, meetings and proposed tables</li>
+  </ul>
+
+  <h2>What is not on the server</h2>
+  <p>Emergency contacts, your own questions, decks, quests and reflection results stay on your phone only. They are gone when you uninstall the app or clear its data in your phone settings.</p>
+
+  <h2>What is kept</h2>
+  <p>Nothing linked to you. Technical logs at our server provider (Supabase) are deleted there automatically under its retention rules. Anonymous accounts unused for 30 days are deleted anyway, with everything attached.</p>
+
+  <p style="margin-top:28px">More in the <a href="datenschutz-en.html">privacy policy</a>, section 10.</p>
+
+</div>
+</body>
+</html>

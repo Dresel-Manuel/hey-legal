@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Konto löschen - hey! App</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background-color: #262B4B;
+    color: #E8E0D5;
+    font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 24px;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+  .draft-notice {
+    color: #BF6B2A;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .date {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 36px;
+    margin-bottom: 12px;
+  }
+  p { margin-bottom: 12px; }
+  ul {
+    margin-bottom: 12px;
+    padding-left: 20px;
+  }
+  li { margin-bottom: 6px; }
+  strong { font-weight: 700; }
+  .category {
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+  a { color: #BF6B2A; text-decoration: underline; }
+  a:hover { opacity: 0.8; }
+  .footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(232, 224, 213, 0.15);
+    font-size: 13px;
+    opacity: 0.5;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(232, 224, 213, 0.15);
+    font-size: 14px;
+  }
+  .nav a { color: #E8E0D5; opacity: 0.6; text-decoration: none; }
+  .nav a:hover { opacity: 1; }
+  .langbar {
+    display: flex; gap: 10px; justify-content: flex-end;
+    margin-bottom: 24px; font-size: 13px;
+  }
+  .langbar a {
+    color: #E8E0D5; opacity: 0.55; text-decoration: none;
+    border: 1px solid rgba(232, 224, 213, 0.2);
+    border-radius: 14px; padding: 4px 12px;
+  }
+  .langbar a:hover { opacity: 0.9; }
+  .langbar a.active {
+    opacity: 1; color: #BF6B2A; border-color: #BF6B2A;
+  }
+  .translation-note {
+    font-size: 13px; opacity: 0.6; margin-bottom: 28px;
+    border-left: 2px solid rgba(232, 224, 213, 0.25);
+    padding-left: 12px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="langbar"><a class="active" href="konto-loeschen.html">Deutsch</a><a href="account-deletion.html">English</a></div>
+  <h1>hey! – Konto und Daten löschen</h1>
+  <p class="date">Stand: 23.11.2026 · App: hey! (Android-Paket de.manueldresel.hey) · Anbieter: Manuel Dresel</p>
+
+  <h2>So löschst du dein Konto in der App</h2>
+  <ol style="padding-left:20px;margin-bottom:12px">
+    <li>Öffne hey! und tippe unten auf <strong>Profil</strong>.</li>
+    <li>Wisch ganz nach unten bis <strong>Konto löschen</strong>.</li>
+    <li>Tippe <strong>Konto löschen</strong> und bestätige mit <strong>Endgültig löschen</strong>.</li>
+  </ol>
+  <p>Die Löschung passiert sofort. Danach startet die App wieder bei der Sprachwahl.</p>
+
+  <h2>Ohne die App löschen lassen</h2>
+  <p>Du hast die App nicht mehr? Schreib eine E-Mail an <a href="mailto:Dresel-Manuel@web.de?subject=hey!%20Konto%20l%C3%B6schen">Dresel-Manuel@web.de</a> mit dem Betreff „hey! Konto löschen“. Wenn du sie hast, nenn deine <strong>Konto-ID</strong> (steht im Profil und lässt sich kopieren). Ohne Konto-ID nenn den Namen, den du in der App benutzt hast, und ungefähr, wann du sie zuletzt genutzt hast. Wir löschen innerhalb von 30 Tagen und bestätigen dir das per E-Mail.</p>
+
+  <h2>Was gelöscht wird</h2>
+  <ul>
+    <li>dein anonymes Konto (zufällige Kennung, Anmeldedaten)</li>
+    <li>dein Profil (Name, Figur)</li>
+    <li>deine Fragekarte auf der Karte (Deck, Startfrage, grobes Feld deines Standorts)</li>
+    <li>deine Anfragen, Treffen und vorgeschlagenen Tische</li>
+  </ul>
+
+  <h2>Was nicht auf dem Server liegt</h2>
+  <p>Notfallkontakte, eigene Fragen, Decks, Quests und Reflexionsergebnisse liegen nur auf deinem Handy. Sie verschwinden, wenn du die App deinstallierst oder ihre Daten in den Geräteeinstellungen löschst.</p>
+
+  <h2>Was aufbewahrt wird</h2>
+  <p>Nichts, das dir zugeordnet ist. Technische Protokolle unseres Server-Anbieters (Supabase) werden dort nach dessen Fristen automatisch gelöscht. Anonyme Konten, die 30 Tage nicht genutzt wurden, löschen wir ohnehin mit allem, was daran hängt.</p>
+
+  <p style="margin-top:28px">Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>, Abschnitt 10.</p>
+
+</div>
+</body>
+</html>
