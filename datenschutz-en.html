@@ -113,6 +113,7 @@
     <li>For the live features (cards of people nearby, requests, meetings, tables) the app uses a server. For this it creates an <strong>anonymous account</strong>: no email, no phone number, no password.</li>
     <li>Your <strong>exact position (GPS) never leaves your device</strong>. So that people nearby can find your sending card, the server stores only the <strong>rough area (a field of about 5 × 5 km)</strong> you are in (section 5).</li>
     <li>Map images come from OpenStreetMap; your IP address is sent to their servers for this (section 6).</li>
+    <li>The web version loads nothing from Google: fonts and technology come from our own web space (section 6.2).</li>
     <li>No advertising, no tracking, no analytics.</li>
   </ul>
 
@@ -135,19 +136,23 @@
   <p><strong>4.4 Search nearby:</strong> when you tap your guide, the app asks the server once for cards within the radius you picked (5 to 50 km). For this your position, rounded to the same 5 km field, is sent; it is used for the search and <strong>not stored</strong>.</p>
   <p><strong>4.5 Requests, meetings and tables:</strong> when you mark a card with the heart, a request goes to the person the card belongs to; they say yes or no (without an answer the request runs out after 10 minutes). Stored are: both account IDs, the question, the rough field of the deck, the answer and the times. After a yes also: the chosen meeting point, your quick messages ("I'm here", "10 more min"), a cancellation and the times. The meeting point is either an official table or an <strong>own table</strong>: its name and the coordinates of the place you drag onto the map. This is a chosen place, <strong>not</strong> your current location. Only the two people involved see this.</p>
   <p><strong>4.6 Official tables:</strong> we and organisers (admins) can put public tables on the map, including inside an event's area. Their name, place, description and who set them are stored.</p>
-  <p><strong>4.7 Awareness alarm at events:</strong> if an event has an awareness team and you trigger the alarm, a report with your account ID, the event and, if any, your current meeting is stored. Your location is not transmitted.</p>
+  <p><strong>4.7 Awareness alarm at events:</strong> if an event has an awareness team and you trigger the alarm, a report with your account ID, the event and, if any, your current meeting is stored. Your location is not transmitted. Only you and we as the operator can see the report.</p>
   <p><strong>4.8 Processor and server location:</strong> the server is operated by Supabase (Supabase Pte. Ltd.) as a processor under Art. 28 GDPR. The database is hosted in a data centre in London, United Kingdom. The EU Commission's adequacy decision for the United Kingdom applies (Art. 45 GDPR, renewed on 19 December 2025, valid until 27 December 2031). Where Supabase can access data from Singapore or the USA (e.g. for operations and support), this is based on the EU Standard Contractual Clauses (Art. 46(2)(c) GDPR), which are part of Supabase's data processing agreement.</p>
   <p><strong>4.9 Places and events on the map:</strong> cafés, meeting places and events that we put on the map ourselves (with opening hours or start and end, description, image and link) contain no data about you. An event has an area (a circle on the map) with its own tables. To show places and events near you, the app sends the same rounded 5 km grid cell as for the search (section 4.4); it is used for that and not stored. The app asks at most once an hour or when you move to another cell. The images are stored with our server provider (section 4.8) and are only loaded when you view them.</p>
   <p><strong>4.10 Contact and feedback by email:</strong> "Feedback" opens your own email app. If you write to us, we process your email address and the content of your message in order to reply (Art. 6(1)(b) or (f) GDPR). We delete the message once your request is settled, unless legal obligations require longer retention.</p>
-  <p><strong>4.11 External links:</strong> "Route" opens your maps app (e.g. Google Maps or Apple Maps) with the meeting place as destination. Other links lead to organisers' websites and to the emergency app nora. From there, those providers' privacy policies apply. hey! passes on nothing but the destination or link itself.</p>
+  <p><strong>4.11 External links:</strong> "Route" opens your maps app (e.g. Google Maps or Apple Maps) with the meeting place as destination. Other links lead to organisers' websites, to the emergency app nora and, in the web version, to our donation page on Ko-fi. From there, those providers' privacy policies apply. hey! passes on nothing but the destination or link itself.</p>
+  <p><strong>4.12 Technical server logs:</strong> each time the app accesses the server, Supabase processes technically necessary connection data (IP address, time, function called, error codes) in logs. They serve operation, troubleshooting and the prevention of misuse (e.g. limiting sign-ins per IP address) and are deleted automatically under Supabase's retention periods. Legal basis: Art. 6(1)(f) GDPR.</p>
 
   <h2>5. Location (GPS)</h2>
   <p>When you switch on "Share location", the app asks your device for permission. Your <strong>exact position</strong> is used <strong>only on your device</strong>: to show you on your own map. It is not sent to our server or to other users.</p>
   <p>Only a <strong>rough area</strong> goes to the server: the centre of the roughly 5 × 5 km grid field you are in. The app rounds before it sends anything, and the server rounds again. The field is stored with your sending card (section 4.3) and used for the search nearby without being stored (section 4.4). Other users see neither the field nor your position, only a rounded distance.</p>
   <p>You can switch it off at any time in the app (profile) or in your device settings. The app then removes your sending card from the server.</p>
 
-  <h2>6. Map display (OpenStreetMap)</h2>
-  <p>The map is loaded from map tiles of the OpenStreetMap Foundation (St John’s Innovation Centre, Cowley Road, Cambridge, CB4 0WS, United Kingdom). Your IP address, the requested map area and technical information (e.g. app identifier) are transmitted to their servers. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in a working map). The OpenStreetMap Foundation's privacy policy applies: <a href="https://osmfoundation.org/wiki/Privacy_Policy">https://osmfoundation.org/wiki/Privacy_Policy</a></p>
+  <h2>6. Services of other providers</h2>
+  <p><strong>6.1 Map display (OpenStreetMap):</strong> The map is loaded from map tiles of the OpenStreetMap Foundation (St John’s Innovation Centre, Cowley Road, Cambridge, CB4 0WS, United Kingdom). Your IP address, the requested map area and technical information (e.g. app identifier) are transmitted to their servers. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in a working map). The OpenStreetMap Foundation's privacy policy applies: <a href="https://osmfoundation.org/wiki/Privacy_Policy">https://osmfoundation.org/wiki/Privacy_Policy</a></p>
+  <p><strong>6.2 Web version:</strong> the web version of hey! is hosted by Netlify (Netlify, Inc., USA), which delivers it as our processor (Art. 28 GDPR). Netlify keeps access logs with your IP address, the time and the file requested and deletes them after less than 30 days. Netlify is certified under the EU-US Data Privacy Framework (adequacy decision, Art. 45 GDPR). Legal basis: Art. 6(1)(f) GDPR (secure and working delivery). All parts of the web version, including fonts and the graphics engine, come from this web space; nothing is loaded from Google or other third parties, except the map images (section 6.1).</p>
+  <p><strong>6.3 Download via Google Play:</strong> if you get hey! from Google Play, Google (Google Ireland Limited) processes data such as your Google account, device data and the download under its own responsibility. We have no influence on this; Google's privacy policy applies. From Google we only receive aggregated statistics (e.g. the number of installs) and technical crash reports without your name or account.</p>
+  <p><strong>6.4 These legal pages:</strong> the privacy policy, terms of use, legal notice and the account deletion page are hosted on GitHub Pages (GitHub). When you open them, GitHub stores your IP address for security purposes under its own responsibility (see GitHub's privacy statement). We do not analyse this data.</p>
 
   <h2>7. Emergency contacts and emergency SMS</h2>
   <p>You pick emergency contacts through your device's contact picker or type them in. The app only receives the one person you pick, not your address book. Name and number stay on your device.</p>
@@ -155,12 +160,13 @@
 
   <h2>8. Permissions</h2>
   <ul>
-    <li><strong>Location:</strong> to show you on your own map; only the rounded 5 km field goes to the server (section 5).</li>
-    <li><strong>Contacts:</strong> the device's contact picker only gives the app the person you pick (section 7).</li>
+    <li><strong>Location:</strong> to show you on your own map; only the rounded 5 km field goes to the server (section 5). On Android the system also requires it for the Bluetooth search when swapping cards.</li>
+    <li><strong>Contacts:</strong> no permission for your address book. Your device's contact picker only gives the app the person you pick (section 7).</li>
     <li><strong>Camera:</strong> only to scan the QR code when swapping cards. No pictures are stored or transmitted.</li>
-    <li><strong>Bluetooth and Wi-Fi Direct:</strong> for swapping cards nearby (directly between devices, without a server).</li>
+    <li><strong>Bluetooth and Wi-Fi Direct (Android only):</strong> for swapping cards nearby (directly between devices, without a server).</li>
+    <li><strong>NFC (Android only):</strong> for swapping cards by holding two phones together. The deck code goes directly from device to device, without a server.</li>
   </ul>
-  <p>Each permission is requested separately and can be withdrawn at any time in your device settings.</p>
+  <p>The app asks for location, camera and Bluetooth one by one; you can withdraw them at any time in your device settings. NFC and internet access are normal permissions without a prompt; you can switch NFC off in your device settings.</p>
 
   <h2>9. Legal bases</h2>
   <ul>
@@ -168,17 +174,21 @@
     <li>Art. 6(1)(f) GDPR: map display (section 6), safety and prevention of misuse (e.g. admin tables, awareness alarm).</li>
     <li>Art. 6(1)(a) GDPR: reflection questionnaire (separate consent; Art. 9(2)(a) GDPR where health data is concerned).</li>
     <li>Art. 6(1)(c) GDPR: proof of age confirmation and consents.</li>
+    <li>§ 25(2) no. 2 TDDDG (German Telecommunications Digital Services Data Protection Act): storing data on your device (section 3), because the app cannot work without it; no separate consent is needed for this.</li>
   </ul>
+  <p><strong>Do you have to provide data?</strong> There is no legal or contractual obligation. Without the anonymous account and the rough field, however, the live features (cards nearby, requests, meetings) do not work; everything else works without the server.</p>
+  <p><strong>Automated decisions:</strong> we do not make automated decisions within the meaning of Art. 22 GDPR and do not create profiles.</p>
 
   <h2>10. Retention and deletion</h2>
   <ul>
     <li><strong>On your device:</strong> until you delete the data in the app, clear the app data in your device settings or uninstall the app.</li>
-    <li><strong>On the server:</strong> your sending card is no longer shown after 12 hours without a refresh and deleted after 2 days, at once when you switch off location. Requests run out after 10 minutes, meetings at the latest when the agreed time runs out. We automatically delete the entries themselves at the latest 30 days after they ended (at events: after the event ends). Anonymous accounts not used for 30 days are deleted with everything attached to them.</li>
+    <li><strong>On the server:</strong> your sending card is no longer shown after 12 hours without a refresh and deleted after 2 days, at once when you switch off location. Requests run out after 10 minutes, meetings at the latest when the agreed time runs out. We automatically delete the entries themselves at the latest 30 days after they ended (at events: after the event ends). Anonymous accounts not used for 30 days are deleted with everything attached to them. Netlify deletes the access logs of the web version after less than 30 days (section 6.2); Supabase deletes server logs under its own retention periods (section 4.12).</li>
     <li><strong>Delete account:</strong> you can delete your account in your profile at any time (steps and how to do it without the app: <a href="account-deletion.html">Delete account</a>). Your anonymous account, profile, sending card, requests and meetings are removed from the server immediately.</li>
   </ul>
 
   <h2>11. Your rights</h2>
   <p>You have the right of access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20), objection (Art. 21) and to withdraw consent (Art. 7(3) GDPR). Contact the email address in section 1.</p>
+  <p style="border:1px solid #BF6B2A;border-radius:8px;padding:12px 14px"><strong>Right to object (Art. 21 GDPR):</strong> where we process data on the basis of Art. 6(1)(f) GDPR (legitimate interest, e.g. sections 4.12, 6.1 and 6.2), you can object at any time on grounds relating to your particular situation. We will then stop processing the data unless we can demonstrate compelling legitimate grounds that override your interests, or the processing serves the establishment, exercise or defence of legal claims. An informal email to the address in section 1 is enough.</p>
   <p>You can lodge a complaint with the competent supervisory authority:</p>
   <p>Berliner Beauftragte für Datenschutz und Informationsfreiheit<br>Alt-Moabit 59-61<br>10555 Berlin, Germany<br>Email: <a href="mailto:mailbox@datenschutz-berlin.de">mailbox@datenschutz-berlin.de</a><br>Web: <a href="https://www.datenschutz-berlin.de">https://www.datenschutz-berlin.de</a></p>
 
