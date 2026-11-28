@@ -99,7 +99,7 @@
 <div class="container">
 <div class="langbar"><a href="datenschutz.html">Deutsch</a><a href="datenschutz-en.html" class="active">English</a></div>
   <h1>Privacy Policy of the app "hey!"</h1>
-  <p class="date">Last updated: 23 November 2026</p>
+  <p class="date">Last updated: 28 November 2026</p>
   <p class="translation-note">English translation for your convenience. The German version is the legally binding one; if the two differ, the German text applies. <a href="datenschutz.html">Deutsche Fassung</a></p>
 
   <h2>1. Controller</h2>
@@ -125,6 +125,7 @@
     <li>Settings (e.g. location sharing on/off, safety settings, language)</li>
     <li>Your answers in the reflection questionnaire (only with separate consent)</li>
     <li>Consent records (age confirmation, acceptance of these terms, acknowledgement of the safety notes, each with time and version)</li>
+    <li>Your encounters of the last 30 days (the person's display name, the question, the date, whether you reported or blocked), so you can report or block later; blocked people stay listed until you lift the block</li>
   </ul>
   <p>This data is not transferred to us or to third parties.</p>
 
@@ -142,6 +143,7 @@
   <p><strong>4.10 Contact and feedback by email:</strong> "Feedback" opens your own email app. If you write to us, we process your email address and the content of your message in order to reply (Art. 6(1)(b) or (f) GDPR). We delete the message once your request is settled, unless legal obligations require longer retention.</p>
   <p><strong>4.11 External links:</strong> "Route" opens your maps app (e.g. Google Maps or Apple Maps) with the meeting place as destination. Other links lead to organisers' websites, to the emergency app nora and, in the web version, to our donation page on Ko-fi. From there, those providers' privacy policies apply. hey! passes on nothing but the destination or link itself.</p>
   <p><strong>4.12 Technical server logs:</strong> each time the app accesses the server, Supabase processes technically necessary connection data (IP address, time, function called, error codes) in logs. They serve operation, troubleshooting and the prevention of misuse (e.g. limiting sign-ins per IP address) and are deleted automatically under Supabase's retention periods. Legal basis: Art. 6(1)(f) GDPR.</p>
+  <p><strong>4.13 Reporting and blocking:</strong> you can report a person you had a request or a meeting with, or a sending card, and block people. For a <strong>report</strong> we store: your account ID, the reported person's account ID, the reason you chose, your optional note, a copy of the question or sending card concerned, the reported person's display name (if known), the time, and our decision (closed or suspension) with its time. Only the controller (section 1) sees reports; the reported person is not told who reported them. For a <strong>block</strong> we store both account IDs and the time; the blocked person is not notified. If three different people have reported the same account, it is provisionally no longer shown until we have reviewed it. If we suspend an account, we store the account ID, the link to the report and the time. The app shows you under Profile → Encounters whether your account is provisionally hidden or suspended. Legal basis: Art. 6(1)(f) GDPR (protecting users from harassment and danger, enforcing the terms of use) and Art. 6(1)(c) GDPR in conjunction with Art. 16 and 17 of the Digital Services Act.</p>
 
   <h2>5. Location (GPS)</h2>
   <p>When you switch on "Share location", the app asks your device for permission. Your <strong>exact position</strong> is used <strong>only on your device</strong>: to show you on your own map. It is not sent to our server or to other users.</p>
@@ -171,19 +173,20 @@
   <h2>9. Legal bases</h2>
   <ul>
     <li>Art. 6(1)(b) GDPR: providing the app and its features (local storage, live features, meetings).</li>
-    <li>Art. 6(1)(f) GDPR: map display (section 6), safety and prevention of misuse (e.g. admin tables, awareness alarm).</li>
+    <li>Art. 6(1)(f) GDPR: map display (section 6), safety and prevention of misuse (e.g. admin tables, awareness alarm, reporting, blocking and suspending accounts under section 4.13).</li>
     <li>Art. 6(1)(a) GDPR: reflection questionnaire (separate consent; Art. 9(2)(a) GDPR where health data is concerned).</li>
     <li>Art. 6(1)(c) GDPR: proof of age confirmation and consents.</li>
     <li>§ 25(2) no. 2 TDDDG (German Telecommunications Digital Services Data Protection Act): storing data on your device (section 3), because the app cannot work without it; no separate consent is needed for this.</li>
   </ul>
   <p><strong>Do you have to provide data?</strong> There is no legal or contractual obligation. Without the anonymous account and the rough field, however, the live features (cards nearby, requests, meetings) do not work; everything else works without the server.</p>
-  <p><strong>Automated decisions:</strong> we do not make automated decisions within the meaning of Art. 22 GDPR and do not create profiles.</p>
+  <p><strong>Automated decisions:</strong> we do not make solely automated decisions within the meaning of Art. 22 GDPR and do not create profiles. The only automatic step: an account reported by three different people is provisionally not shown until we have reviewed it (section 4.13); a human always decides on a suspension.</p>
 
   <h2>10. Retention and deletion</h2>
   <ul>
     <li><strong>On your device:</strong> until you delete the data in the app, clear the app data in your device settings or uninstall the app.</li>
     <li><strong>On the server:</strong> your sending card is no longer shown after 12 hours without a refresh and deleted after 2 days, at once when you switch off location. Requests run out after 10 minutes, meetings at the latest when the agreed time runs out. We automatically delete the entries themselves at the latest 30 days after they ended (at events: after the event ends). Anonymous accounts not used for 30 days are deleted with everything attached to them. Netlify deletes the access logs of the web version after less than 30 days (section 6.2); Supabase deletes server logs under its own retention periods (section 4.12).</li>
-    <li><strong>Delete account:</strong> you can delete your account in your profile at any time (steps and how to do it without the app: <a href="account-deletion.html">Delete account</a>). Your anonymous account, profile, sending card, requests and meetings are removed from the server immediately.</li>
+    <li><strong>Reports and blocks:</strong> we automatically delete reports 6 months after receipt. If the reporting or the reported person deletes their account earlier, the report remains until then, but without any link to an account; this serves the safety of other users and the defence of legal claims (Art. 17(3)(e) GDPR). Blocks remain until you lift them or one of the two accounts is deleted; suspensions until we lift them or the account is deleted.</li>
+    <li><strong>Delete account:</strong> you can delete your account in your profile at any time (steps and how to do it without the app: <a href="account-deletion.html">Delete account</a>). Your anonymous account, profile, sending card, requests, meetings and blocks are removed from the server immediately. Reports remain without any link to your account until their deadline, as described above.</li>
   </ul>
 
   <h2>11. Your rights</h2>
